@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Recuperar senha</title>
+
+    <!-- Mesmo CSS utilizado na tela de login -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="login-container">
+
+        <section class="login-card">
+
+            <!-- Imagem -->
+            <div class="login-image">
+                <img
+                    src="../imagens/senha.jpeg"
+                    alt="Imagem de recuperação de senha"
+                >
+            </div>
+
+            <!-- Conteúdo -->
+            <div class="login-content">
+
+                <h1>Esqueceu sua senha?</h1>
+
+                <p class="subtitle">
+                    Digite seu e-mail e enviaremos as instruções
+                    para recuperar sua senha.
+                </p>
+
+                <form id="forgotPasswordForm">
+
+                    <div class="input-group">
+
+                        <label for="email">
+                            E-mail
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Digite seu e-mail"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+                    <button type="submit">
+                        Enviar
+                    </button>
+
+                    <!-- Mensagem de sucesso ou erro -->
+                    <p id="message"></p>
+
+                </form>
+
+                <a
+                    href="index.html"
+                    class="back-link"
+                >
+                    ← Voltar para o login
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- JavaScript específico desta página -->
+    <script src="esqueci-senha.js"></script>
+
+</body>
+
+</html>
